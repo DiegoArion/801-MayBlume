@@ -11,18 +11,15 @@ body {
     flex-direction: column;
 }
 
-/* div {
-    border: 1px solid yellow;
-} */
-
 .background {
-    height: 100vh;
+    height: 40vh;
     width: 100vw;
 }
 
 .background img {
+    position: absolute;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
 }
 
 .drawing {
@@ -70,7 +67,9 @@ body {
     width: 60%;
     border-radius: 10px;
     background-color: #f2bdd2;
-    
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .btn_redondo {
@@ -172,14 +171,6 @@ body {
     display: flex;
     transform: none;
     transition: all 1s ease;
-}
-
-.drawing:hover .display_active {
-    display: flex;
-}
-
-.drawing:hover .display_sleep {
-    display: none;
 }
 
 

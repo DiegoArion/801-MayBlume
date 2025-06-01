@@ -17,9 +17,9 @@
             <div class="controles">
                 <div class="btn_cuadrado"></div>
                 <div class="btn_cuadrado"></div>
-                <div class="btn_redondo"></div>
+                <div class="inicio btn_redondo"></div>
                 <div class="btn_cuadrado"></div>
-                <button class="price btn_cuadrado">$</button>
+                <div class="price btn_cuadrado"><p>$</p></div>
 
             </div>
             <div class="display display_sleep">
@@ -56,13 +56,35 @@
         </div>
     </div>
     <script>
-        const button = document.querySelector('.price');
-        const screen = document.querySelector('.display_comission');
+        const background = document.querySelector('.background_img');
+        const buttonPrice = document.querySelector('.price');
+        const buttonInicio = document.querySelector('.inicio');
+        const screenComission = document.querySelector('.display_comission');
+        const screenActive = document.querySelector('.display_active');
+        const screenSleep = document.querySelector('.display_sleep');
 
-        button.addEventListener('mousedown', () => {
-            screen.style.backgroundImage = "url('/img/new-background.jpg')";
-            display_comission.display = absolute;
+        buttonPrice.addEventListener('mousedown', () => {
+            screenComission.style.display = "flex";
+            screenActive.style.display = "none";
+            screenSleep.style.display = "none";
         });
+        buttonInicio.addEventListener('mousedown', () => {
+            screenComission.style.display = "none";
+            screenActive.style.display = "flex";
+            screenSleep.style.display = "none";
+        });
+        background.addEventListener('mouseover', () => {
+            screenComission.style.display = "none";
+            screenActive.style.display = "none";
+            screenSleep.style.display = "flex";
+        });
+        background.addEventListener('mouseout', () => {
+            screenComission.style.display = "none";
+            screenActive.style.display = "flex";
+            screenSleep.style.display = "none";
+        });
+        
+
     </script>
 </body>
 
