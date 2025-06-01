@@ -159,7 +159,7 @@ body {
 .drawing:hover .tablet_down{
     position: fixed;
     bottom: 0%;
-    height: 60vh;
+    height: 80vh;
     width: 100vw;
     background-color: #f797bd;
     border: 3px solid black;
