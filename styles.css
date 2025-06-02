@@ -47,7 +47,7 @@ body {
 
 .controles{
     height: 100%;
-    width: 5%;
+    width: 8%;
     min-width: 60px;
     display: flex;
     flex-direction: column;
@@ -63,20 +63,29 @@ body {
 }
 
 .btn_cuadrado {
-    height: 10%;
+    height: 8%;
     width: 60%;
     border-radius: 10px;
     background-color: #f2bdd2;
     justify-content: center;
     align-items: center;
     display: flex;
+    color: #f53d86;
 }
 
 .btn_redondo {
-    height: 12%;
+    height: 11%;
     width: 75%;
     border-radius: 50px;
-    background-color: #f2bdd2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: -1px 1px 5px 3px #f53d86;
+    
+}
+
+.btn_redondo img {
+    height: 80%;
 }
 
 .display {
@@ -130,16 +139,21 @@ body {
     position: fixed;
     font-size: 2em;
     font-weight: 700;
-    color: #f100bd;
+    color: #FABFD5;
     z-index: 2;
     bottom: 5%;
+    -webkit-text-stroke: 2px rgb(235, 135, 168);
 }
 
 .screen_sleep img {
     height: 60%;
     position:absolute;
     border-radius: 50%;
-    border: 3px solid palevioletred;
+    border: 1px solid palevioletred;
+}
+
+.screen_comission img {
+    height: 100%;
 }
 
 .screen::-webkit-scrollbar {
@@ -147,7 +161,8 @@ body {
   }
 
 .screen_active img {
-    height: 98%;
+    max-width: 98%;
+    height: fit-content;
     border-radius: 5px;
     object-fit: contain;
     box-shadow:
@@ -169,6 +184,10 @@ body {
     transition: all 1s ease;
 }
 
+.controles div:active {
+    background-color: #f00f69;
+    color:white;
+}
 
 
 
