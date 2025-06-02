@@ -106,7 +106,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
-    background-image: url("/background4.jpg");
+    background-image: url("./background4.jpg");
     background-size: cover;
     padding-top: 10px;
     padding-bottom: 10px;
